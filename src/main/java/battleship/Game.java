@@ -439,5 +439,8 @@ public class Game implements IGame
 			System.out.println("+--------------------------------------------------------------+");
 			System.out.println("| Maldito sejas, Java Sparrow, eu voltarei, glub glub glub ... |");
 			System.out.println("+--------------------------------------------------------------+");
+			System.out.println("A gerar relatório de jogadas em PDF...");
+			PDFGenerator gerador = new PDFGenerator();
+			gerador.gerarRelatorio(this.alienMoves);
 	}
 }
